@@ -1,15 +1,43 @@
-*.iml
-.gradle
-/local.properties
+# Ignorar arquivos e pastas específicas da IDE (Android Studio/IntelliJ)
+/.idea/
 /.idea/caches
 /.idea/libraries
 /.idea/modules.xml
 /.idea/workspace.xml
 /.idea/navEditor.xml
 /.idea/assetWizardSettings.xml
-.DS_Store
-/build
-/captures
-.externalNativeBuild
-.cxx
+
+# Ignorar arquivos específicos do Gradle
+.gradle/
+.gradle/caches/
+.gradle/daemon/
+.gradle/wrapper/
+
+# Ignorar configurações locais de ambiente
+/local.properties
 local.properties
+
+# Ignorar arquivos temporários e caches do Android Build
+/build/
+/app/build/
+/captures/
+.externalNativeBuild/
+/.cxx/
+
+# Ignorar arquivos do sistema operacional
+.DS_Store
+
+# Ignorar arquivos específicos do NDK, se aplicável
+/ndk_locator_record.json
+
+# Ignorar artefatos gerados
+*.apk
+*.ap_
+*.aab
+
+# Ignorar arquivos de configuração específicos da linguagem
+*.iml
+
+# Ignorar arquivos binários e compilados
+*.class
+*.kotlin_module
